@@ -56,6 +56,7 @@ const upload = multer();
 
 
 // Force IPv4
+console.log("DATABASE_URL:", process.env.DATABASE_URL);
 const { Pool } = pg;
 
 const db = new Pool({
